@@ -237,14 +237,17 @@ with tab2:
     col_btn, col_stats = st.columns([1, 3])
     with col_btn:
         if st.button("⚡ Run Full 15-Request Triage", type="primary"):
-            with st.spinner("Processing all 15 employee requests across Veridian IT policies..."):
-                for req in EMPLOYEE_REQUESTS:
-                    out = st.session_state.agent.triage_request(
-                        employee=req["employee"],
-                        email=req["email"],
-                        request_text=req["request"]
-                    )
-                    st.session_state.processed_requests[req["id"]] = out
+            progress_bar = st.progress(0.0, text="Initializing 15-request triage...")
+            total = len(EMPLOYEE_REQUESTS)
+            for idx, req in enumerate(EMPLOYEE_REQUESTS):
+                progress_bar.progress((idx + 1) / total, text=f"Triaging {req['id']} ({req['employee']})...")
+                out = st.session_state.agent.triage_request(
+                    employee=req["employee"],
+                    email=req["email"],
+                    request_text=req["request"]
+                )
+                st.session_state.processed_requests[req["id"]] = out
+            progress_bar.empty()
             st.success("All 15 requests successfully triaged and audited!")
 
     # Display Table

@@ -36,7 +36,9 @@ def chat(messages: list, temperature: float = 0.0) -> str:
         response = client.chat.completions.create(
             model=MODEL_NAME,
             messages=messages,
-            temperature=temperature
+            temperature=temperature,
+            max_tokens=250,
+            timeout=4.0
         )
         return response.choices[0].message.content
     except Exception as e:
