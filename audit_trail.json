@@ -729,5 +729,31 @@
     "ticket_id": "TK-AUTO-7328",
     "agent_response": "Per policy KB-03 (Laptop Replacement), devices are eligible after 3 years of service or verified hardware failure. However, per the Finance & Assets Management Policy (Q2 2026), all hardware follows a standard 4-year refresh cycle. Since your laptop is 3.5 years old, this counts as an early replacement outside the 4-year cycle. Following precedent TK-1043, I have created an active replacement ticket routed for Finance sign-off and IT fulfillment.",
     "timestamp": "2026-09-20T18:55:33.354801"
+  },
+  {
+    "employee": "Test User",
+    "email": "test@veridian.example",
+    "request": "Can I get Wi-Fi access for a guest visiting our office tomorrow?",
+    "decision": "Resolved (Self-Service / Automated)",
+    "urgency": "Standard",
+    "cited_policies": [
+      "KB-07"
+    ],
+    "precedents_referenced": [
+      "TK-1042",
+      "TK-1043",
+      "TK-1044",
+      "TK-1045",
+      "TK-1046",
+      "TK-1047",
+      "TK-1048",
+      "TK-1049",
+      "TK-1050",
+      "TK-1051"
+    ],
+    "escalated_to": null,
+    "ticket_id": "TK-AUTO-0148",
+    "agent_response": "Per policy KB-07 (Guest Wi-Fi Access), guest Wi-Fi credentials are valid for 24 hours and can be generated directly by any employee from the front-desk kiosk. No IT support ticket is required. You can print or copy the credentials at the reception desk kiosk tomorrow morning.",
+    "timestamp": "2026-09-20T21:32:16.571926"
   }
 ]
