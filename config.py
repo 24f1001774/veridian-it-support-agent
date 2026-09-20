@@ -25,6 +25,15 @@ def load_env_file():
 
 load_env_file()
 
+# Check Streamlit Cloud Secrets if os.environ doesn't have GROQ_API_KEY
+if not os.environ.get("GROQ_API_KEY"):
+    try:
+        import streamlit as st
+        if hasattr(st, "secrets") and "GROQ_API_KEY" in st.secrets:
+            os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+    except Exception:
+        pass
+
 # API Configuration - Compatible with Groq / OpenAI API
 API_KEY = os.environ.get("GROQ_API_KEY", "")
 BASE_URL = os.environ.get("BASE_URL", "https://api.groq.com/openai/v1")
