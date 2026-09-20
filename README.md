@@ -3,7 +3,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io)
-[![Groq](https://img.shields.io/badge/Groq-openai%2Fgpt--oss--120b-orange?style=for-the-badge)](https://groq.com)
+[![Groq](https://img.shields.io/badge/Groq-groq%2Fcompound--mini-orange?style=for-the-badge)](https://groq.com)
 [![Architecture](https://img.shields.io/badge/Design-ReAct_Pattern-green?style=for-the-badge)](https://github.com)
 [![Status](https://img.shields.io/badge/Evaluation-15%2F15_Benchmark_Passed-success?style=for-the-badge)](https://github.com)
 

@@ -10,7 +10,7 @@
 * **Subtitle**: Grounded Enterprise Triage, Policy Conflict Resolution, and Compliance Auditing
 * **Track**: Agentic AI Factory — Assignment 2 (Internal Service Agent)
 * **Candidate**: Sai Nayan Mamilla
-* **Core Technology**: Hybrid ReAct Agent + Groq `openai/gpt-oss-120b` + Deterministic Policy Engine
+* **Core Technology**: Hybrid ReAct Agent + Groq `groq/compound-mini` + Deterministic Policy Engine
 * **Key Achievement**: 100% resolution accuracy across all 15 official test requests (`REQ-01` to `REQ-15`), zero hallucinated policies, deterministic conflict resolution, and automated audit logging.
 
 ---
@@ -29,7 +29,7 @@
 * **Architecture Diagram**:
   * **Input Layer**: Employee Ticket / Interactive Portal (Streamlit).
   * **Reasoning Layer**: ReAct Loop (Intent Recognition $\rightarrow$ KB Retrieval $\rightarrow$ Historical Precedent Match $\rightarrow$ Diagnostic Check).
-  * **Model**: Groq LPU with `openai/gpt-oss-120b` for low-latency contextual dialogue.
+  * **Model**: Groq LPU with `groq/compound-mini` for low-latency contextual dialogue.
   * **Policy Enforcement Layer**: Deterministic Policy Engine (Validates device age, quotas, contractor status, and approval hierarchies).
   * **Action Layer**: Automated Resolution vs. Human Escalation (IT Security, Finance, Manager).
   * **Governance Layer**: Persistent Audit Trail (`audit_trail.json`).

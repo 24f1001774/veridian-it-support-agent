@@ -28,7 +28,7 @@ load_env_file()
 # API Configuration - Compatible with Groq / OpenAI API
 API_KEY = os.environ.get("GROQ_API_KEY", "")
 BASE_URL = os.environ.get("BASE_URL", "https://api.groq.com/openai/v1")
-MODEL_NAME = os.environ.get("MODEL_NAME", "openai/gpt-oss-120b")
+MODEL_NAME = os.environ.get("MODEL_NAME", "groq/compound-mini")
 
 # Company Metadata
 COMPANY_NAME = "Veridian Corp"

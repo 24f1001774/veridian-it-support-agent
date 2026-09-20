@@ -387,7 +387,7 @@ with tab6:
 **Grounded Enterprise Triage, Policy Conflict Resolution, and Compliance Auditing**
 * **Track**: Agentic AI Factory — Assignment 2 (Internal Service Agent)
 * **Candidate**: Sai Nayan Mamilla
-* **Core Technology**: Hybrid ReAct Agent + Groq `openai/gpt-oss-120b` + Deterministic Policy Engine
+* **Core Technology**: Hybrid ReAct Agent + Groq `groq/compound-mini` + Deterministic Policy Engine
 
 ---
 #### Executive Highlights:
@@ -434,7 +434,7 @@ flowchart TD
 ```
 
 #### Modular Engineering Principles:
-- `config.py`: Environment configuration and model definition (`openai/gpt-oss-120b`).
+- `config.py`: Environment configuration and model definition (`groq/compound-mini`).
 - `data_pack.py`: Ground truth knowledge base, 15 requests, and 10 precedent tickets.
 - `policy_engine.py`: Deterministic verification, hardware age logic, and quota enforcement.
 - `tools.py`: Single-responsibility tools for lookup, search, and ticket issuance.
@@ -556,7 +556,7 @@ flowchart TD
 ### Defence & Video Submission Checklist:
 - ✅ Live Streamlit Application running at `http://localhost:8501`.
 - ✅ Complete 10-Slide Deck available in-app and in `presentation_deck.md`.
-- ✅ Model configured to `openai/gpt-oss-120b` with deterministic fail-safe fallback.
+- ✅ Model configured to `groq/compound-mini` with deterministic fail-safe fallback.
 - ✅ Clean, student-style modular Python repository.
             """
         }
